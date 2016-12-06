@@ -1,0 +1,51 @@
+'scopeName': 'source.sapphire'
+'name': 'Sapphire'
+'fileTypes': ['sapphire']
+
+'patterns': [
+  {
+    'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
+    'name': 'constant.numeric.sapphire'
+  },
+  {
+    'name': 'constant.character.sapphire'
+    'begin': '\''
+    'end': '\''
+  },
+  {
+    'name': 'keyword.control.sapphire'
+    'match': '\\b(start)'
+  },
+  {
+    'name': 'keyword.control.sapphire'
+    'match': '\\b(end)'
+  },
+  {
+    'name': 'entity.name.function.sapphire'
+    'match': '\\b(show)'
+  },
+  {
+    'match': '\\b(function)\\s+(\\w+)\\s*\\(.*\\)'
+    'captures':
+        '1':
+            'name': 'keyword.control.sapphire'
+        '2':
+            'name': 'entity.name.function.sapphire'
+    'name': 'meta.function.sapphire'
+  },
+  {
+    'begin': '\\"'
+    'end': '\\"'
+    'name': 'string.quoted.double.sapphire'
+  },
+  {
+    'begin': '\\%'
+    'end': '\\%'
+    'name': 'comment.block.sapphire'
+  }
+  {
+    'begin': '\\~'
+    'end': '\\\n'
+    'name': 'comment.line.character.sapphire'
+  }
+]

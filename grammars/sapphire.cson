@@ -25,6 +25,10 @@
     'match': '\\b(show)'
   },
   {
+    'name': 'variable.sapphire'
+    'match': '\\b(as)'
+  },
+  {
     'match': '\\b(function)\\s+(\\w+)\\s*\\(.*\\)'
     'captures':
         '1':
@@ -39,13 +43,21 @@
     'name': 'string.quoted.double.sapphire'
   },
   {
-    'begin': '\\%'
-    'end': '\\%'
+    'begin': '\\$'
+    'end': '\\$'
     'name': 'comment.block.sapphire'
   }
   {
     'begin': '\\~'
     'end': '\\\n'
     'name': 'comment.line.character.sapphire'
+  },
+  {
+    'name': 'entity.name.type.sapphire'
+    'match': '\\b(Int)|\\b(Bool)|\\b(Char)|\\b(String)|\\b(Double)|\\b(Float)'
+  },
+  {
+    'name': 'constant.escape.sapphire'
+    'match': '\\b(nil)'
   }
 ]

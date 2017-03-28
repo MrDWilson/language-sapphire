@@ -22,11 +22,11 @@
   },
   {
     'name': 'entity.name.function.sapphire'
-    'match': '\\b(show)'
+    'match': '\\b(show)|\\b(if)|\\b(fi)'
   },
   {
     'name': 'variable.sapphire'
-    'match': '\\b(as)'
+    'match': '\\b(as)|\\b(->)'
   },
   {
     'match': '\\b(function)\\s+(\\w+)\\s*\\(.*\\)'
@@ -54,7 +54,7 @@
   },
   {
     'name': 'entity.name.type.sapphire'
-    'match': '\\b(Int)|\\b(Bool)|\\b(Char)|\\b(String)|\\b(Double)|\\b(Float)'
+    'match': '\\b(Int)|\\b(Bool)|\\b(Char)|\\b(String)|\\b(Double)|\\b(Float)|\\b(otherwise)'
   },
   {
     'name': 'constant.escape.sapphire'

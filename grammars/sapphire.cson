@@ -14,7 +14,7 @@
   },
   {
     'name': 'keyword.control.sapphire'
-    'match': '\\b(start)'
+    'match': '\\b(start)|\\b(nuf)|\\b(result)'
   },
   {
     'name': 'keyword.control.sapphire'
@@ -26,10 +26,10 @@
   },
   {
     'name': 'variable.sapphire'
-    'match': '\\b(as)|\\b(->)'
+    'match': '\\b(as)'
   },
   {
-    'match': '\\b(function)\\s+(\\w+)\\s*\\(.*\\)'
+    'match': '\\b(fun)\\s+(\\w+)'
     'captures':
         '1':
             'name': 'keyword.control.sapphire'
@@ -54,7 +54,7 @@
   },
   {
     'name': 'entity.name.type.sapphire'
-    'match': '\\b(Int)|\\b(Bool)|\\b(Char)|\\b(String)|\\b(Double)|\\b(Float)|\\b(otherwise)'
+    'match': '\\b(Int)|\\b(Boolean)|\\b(Char)|\\b(String)|\\b(Double)|\\b(Float)|\\b(otherwise)'
   },
   {
     'name': 'constant.escape.sapphire'
